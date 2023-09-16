@@ -19,24 +19,27 @@ def menu():
     print(purple('4. ') + blue('D10'))
     print(purple('5. ') + blue('D12'))
     print(purple('6. ') + blue('D20'))
+    print(purple('7. ') + red('Exit'))
     print(gray('_'*50))
     print('')
     dice = ''
     while dice == '': 
         dice_option = input(gray('Selec a dice: '))
         dice = validate_initial_option(dice_option)
-    print('')
-    roll(dice)
+    if dice_option == '7':
+        signature()
+        return
     end_menu(dice)
 
 def end_menu(dice):
-    print('')
     print(gray('_'*50))
     print('')
     print(purple('1. ') + blue('Roll again'))
     print(purple('2. ') + blue('Select dice'))
     print(purple('3. ') + red('Exit'))
     print(gray('_'*50))
+    print('')
+    roll(dice)
     print('')
     while True:
         end_option = input(gray('Selec a option: '))

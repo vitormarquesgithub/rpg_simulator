@@ -5,6 +5,8 @@ def validate_initial_option(value):
     str_value = str(value)
     if str_value.isnumeric():
         int_value = int(value)
+        if int_value == 7:
+            return
         for i in range(0, len(dices_list)):
             if int_value == dices_list[i].id:
                 return dices_list[i]
