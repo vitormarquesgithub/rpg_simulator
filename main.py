@@ -1,4 +1,4 @@
-from assets.menu import Menu
+from assets.menu import menu
 
 if __name__ == "__main__":
-    Menu()
+    menu()

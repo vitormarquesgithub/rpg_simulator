@@ -1,0 +1,7 @@
+def red(str): return f'\033[91m{str}\033[00m'
+def green(str): return f'\033[92m{str}\033[00m'
+def yellow(str): return f'\033[93m{str}\033[00m'
+def blue(str): return f'\033[94m{str}\033[00m'
+def purple(str): return f'\033[95m{str}\033[00m'
+def cyan(str): return f'\033[96m{str}\033[00m'
+def gray(str): return f'\033[90m{str}\033[00m'

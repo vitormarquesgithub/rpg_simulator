@@ -1,6 +1,6 @@
 from core.dices import dices_list
 
-def Validate_initial_option(value): 
+def validate_initial_option(value): 
     str_value = str(value)
     if str_value.isnumeric():
         int_value = int(value)
@@ -10,13 +10,12 @@ def Validate_initial_option(value):
     print('not found')
     return ''
 
-def Validate_end_option(value): 
+def validate_end_option(value): 
     str_value = str(value)
     if str_value.isnumeric():
         int_value = int(value)
         if int_value == 1 or int_value == 2 or int_value == 3:
             return int_value
-        else:
-            print('not found')
-            return ''
+    print('not found')
+    return ''
     

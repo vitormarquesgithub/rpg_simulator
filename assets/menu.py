@@ -1,24 +1,29 @@
-from core.validation import Validate_initial_option
-from core.validation import Validate_end_option
-from assets.colors import Terminal
-from core.roll import Roll
+from core.validation import validate_initial_option
+from core.validation import validate_end_option
+from assets.terminal_colors import gray
+from core.roll import roll
 
-def Menu():
+def menu(): 
     print('')
     print('_'*50)
     print('')
-    print('1. D3')
+    print('1. D4')
+    print('2. D6')
+    print('3. D8')
+    print('4. D10')
+    print('5. D12')
+    print('6. D20')
     print('_'*50)
     print('')
     dice = ''
-    while dice == '':
-        dice_option = input(Terminal.Gray('Selec a dice: '))
-        dice = Validate_initial_option(dice_option)
+    while dice == '': 
+        dice_option = input(gray('Selec a dice: '))
+        dice = validate_initial_option(dice_option)
     print('')
-    Roll(dice)
-    End_menu(dice)
+    roll(dice)
+    end_menu(dice)
 
-def End_menu(dice):
+def end_menu(dice):
     print('')
     print('_'*50)
     print('')
@@ -28,12 +33,13 @@ def End_menu(dice):
     print('_'*50)
     print('')
     while True:
-        end_option = input(Terminal.Gray('Selec a option: '))
-        end_option_validate = Validate_end_option(end_option)
+        end_option = input(gray('Selec a option: '))
+        end_option_validate = validate_end_option(end_option)
         if end_option_validate == 3:
             print('')
-            return
+            break
         elif end_option_validate == 2:
-            Menu()
+            menu()
+            break
         elif end_option_validate == 1:
-            Roll(dice)
+            roll(dice)
