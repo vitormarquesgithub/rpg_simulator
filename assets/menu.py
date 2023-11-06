@@ -1,10 +1,10 @@
-from core.validation import validate_initial_option
-from core.validation import validate_end_option
+from utils.validation import validate_initial_option
+from utils.validation import validate_end_option
 from assets.terminal_colors import gray
 from assets.terminal_colors import purple
 from assets.terminal_colors import blue
 from assets.terminal_colors import red
-from core.roll import roll
+from dices.roll import roll
 
 def menu(): 
     print('')

@@ -1,4 +1,4 @@
-from core.dices import dices_list
+from dices.dices import dices_list
 from assets.terminal_colors import red
 
 def validate_initial_option(value): 
