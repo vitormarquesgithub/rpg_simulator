@@ -2,6 +2,8 @@
 
 ### Inglês (EN):
 
+## Description
+
 This project is a simple dice rolling application that allows you to roll various types of dice.
 
 ## How to Run the Project
@@ -25,6 +27,8 @@ I have plans to add a short RPG mini-game where you can make choices through the
 - This project is licensed under the MIT License.
 
 ### Português (BR):
+
+## Description
 
 Este projeto é um simples aplicativo de lançamento de dados que permite que você jogue vários tipos de dados.
 
