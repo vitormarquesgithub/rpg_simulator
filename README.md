@@ -28,7 +28,7 @@ I have plans to add a short RPG mini-game where you can make choices through the
 
 ### Português (BR):
 
-## Description
+## Descrição
 
 Este projeto é um simples aplicativo de lançamento de dados que permite que você jogue vários tipos de dados.
 
